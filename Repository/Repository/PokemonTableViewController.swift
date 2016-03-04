@@ -16,7 +16,7 @@ class PokemonTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let query = AnyQuery.Equal(key: "ID", value: 1) || AnyQuery.Equal(key: "ID", value: 2)
+        let query = AnyQuery.In(key: "ID", values: [1, 2, 3, 4, 5])
         let sort = AnySort.Ascending(key: "name")
         repository.findAll(query: query, sort: sort).success { [unowned self] pokemons in
             self.pokemons = pokemons
