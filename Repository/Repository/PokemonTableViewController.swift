@@ -11,7 +11,7 @@ import AnyQuery
 
 class PokemonTableViewController: UITableViewController {
     var pokemons: [Pokemon] = []
-    lazy var repository: AnyRepository<Pokemon> = AnyRepository(MemoryPokemonRepository())
+    lazy var repository: AnyRepository<Pokemon> = AnyRepository(RealmPokemonRepository())
 
     override func viewDidLoad() {
         super.viewDidLoad()

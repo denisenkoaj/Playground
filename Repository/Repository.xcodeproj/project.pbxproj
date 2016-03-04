@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6DDE0F1C895FD9001A42C2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6DDE0E1C895FD9001A42C2 /* Realm.framework */; };
+		3D6DDE101C895FD9001A42C2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6DDE0E1C895FD9001A42C2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D6DDE121C895FE9001A42C2 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6DDE111C895FE9001A42C2 /* RealmSwift.framework */; };
+		3D6DDE131C895FE9001A42C2 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6DDE111C895FE9001A42C2 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D6DDE151C89600D001A42C2 /* RealmPokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6DDE141C89600D001A42C2 /* RealmPokemonRepository.swift */; };
+		3D6DDE171C8961B7001A42C2 /* RealmPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6DDE161C8961B7001A42C2 /* RealmPokemon.swift */; };
 		3D8A836F1C8916EE00D7EB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A836E1C8916EE00D7EB9E /* AppDelegate.swift */; };
 		3D8A83741C8916EE00D7EB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A83721C8916EE00D7EB9E /* Main.storyboard */; };
 		3D8A83761C8916EE00D7EB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A83751C8916EE00D7EB9E /* Assets.xcassets */; };
@@ -31,7 +37,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3D6DDE101C895FD9001A42C2 /* Realm.framework in Embed Frameworks */,
 				3DF99EB41C891A940008FAFF /* AnyQuery.framework in Embed Frameworks */,
+				3D6DDE131C895FE9001A42C2 /* RealmSwift.framework in Embed Frameworks */,
 				3DF99EB81C891AAA0008FAFF /* SwiftTask.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -40,6 +48,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D6DDE0E1C895FD9001A42C2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		3D6DDE111C895FE9001A42C2 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		3D6DDE141C89600D001A42C2 /* RealmPokemonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmPokemonRepository.swift; sourceTree = "<group>"; };
+		3D6DDE161C8961B7001A42C2 /* RealmPokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmPokemon.swift; sourceTree = "<group>"; };
 		3D8A836B1C8916EE00D7EB9E /* Repository.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repository.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8A836E1C8916EE00D7EB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8A83731C8916EE00D7EB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6DDE0F1C895FD9001A42C2 /* Realm.framework in Frameworks */,
 				3DF99EB31C891A940008FAFF /* AnyQuery.framework in Frameworks */,
+				3D6DDE121C895FE9001A42C2 /* RealmSwift.framework in Frameworks */,
 				3DF99EB71C891AAA0008FAFF /* SwiftTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +111,8 @@
 				3DF99EC61C892CF50008FAFF /* NSPokemon.swift */,
 				3DF99EC21C8928650008FAFF /* Pokemon.swift */,
 				3DF99EBA1C891B380008FAFF /* PokemonTableViewController.swift */,
+				3D6DDE161C8961B7001A42C2 /* RealmPokemon.swift */,
+				3D6DDE141C89600D001A42C2 /* RealmPokemonRepository.swift */,
 				3DF99EBC1C891C3E0008FAFF /* Repository.swift */,
 				3DF99EC41C892B8E0008FAFF /* RepositoryError.swift */,
 				3D8A83751C8916EE00D7EB9E /* Assets.xcassets */,
@@ -109,8 +125,10 @@
 		3DF99EB91C891AAF0008FAFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DF99EB61C891AAA0008FAFF /* SwiftTask.framework */,
 				3DF99EB21C891A940008FAFF /* AnyQuery.framework */,
+				3D6DDE0E1C895FD9001A42C2 /* Realm.framework */,
+				3D6DDE111C895FE9001A42C2 /* RealmSwift.framework */,
+				3DF99EB61C891AAA0008FAFF /* SwiftTask.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,10 +207,12 @@
 			files = (
 				3DF99EBB1C891B380008FAFF /* PokemonTableViewController.swift in Sources */,
 				3D8A836F1C8916EE00D7EB9E /* AppDelegate.swift in Sources */,
+				3D6DDE151C89600D001A42C2 /* RealmPokemonRepository.swift in Sources */,
 				3DF99EBF1C891F5A0008FAFF /* AnyRepository.swift in Sources */,
 				3DF99EBD1C891C3E0008FAFF /* Repository.swift in Sources */,
 				3DF99EC71C892CF50008FAFF /* NSPokemon.swift in Sources */,
 				3DF99EC11C8924E30008FAFF /* MemoryPokemonRepository.swift in Sources */,
+				3D6DDE171C8961B7001A42C2 /* RealmPokemon.swift in Sources */,
 				3DF99EC51C892B8E0008FAFF /* RepositoryError.swift in Sources */,
 				3DF99EC31C8928650008FAFF /* Pokemon.swift in Sources */,
 			);
