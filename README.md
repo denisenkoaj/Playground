@@ -1,2 +1,5 @@
 # playground
-:boom: Experimental projects :boom:
+:baby_chick: Experimental projects :baby_chick:
+
+* Repository: Repository pattern in Swift
+
