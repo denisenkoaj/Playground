@@ -24,7 +24,16 @@ class PokemonTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = NSLocalizedString("PokemonTableView.Title", comment: "")
+        parentViewController?.title = NSLocalizedString("PokemonTableView.Title", comment: "")
+        
+        let refreshButtonItem = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "refreshTableView")
+        parentViewController?.navigationItem.rightBarButtonItem = refreshButtonItem
+    }
+    
+    func refreshTableView() {
+        if let containerViewController = parentViewController as? ResultContainerViewControllerType {
+            containerViewController.transitionToFailureContent()
+        }
     }
 }
 

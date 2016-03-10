@@ -9,7 +9,7 @@
         <!--Empty View Controller-->
         <scene sceneID="LcN-fH-V6c">
             <objects>
-                <viewController id="wfd-4t-5wq" customClass="EmptyViewController" customModule="ResultContainer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmptyViewController" id="wfd-4t-5wq" customClass="EmptyViewController" customModule="ResultContainer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b1a-Be-kSo"/>
                         <viewControllerLayoutGuide type="bottom" id="85u-Mk-1dp"/>
@@ -34,6 +34,9 @@
                                 <rect key="frame" x="271" y="334" width="58" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="didTapRecoveryButton:" destination="wfd-4t-5wq" eventType="touchUpInside" id="U8e-6T-GdA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

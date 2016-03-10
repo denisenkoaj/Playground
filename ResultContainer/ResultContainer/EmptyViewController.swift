@@ -20,4 +20,10 @@ class EmptyViewController: UIViewController {
         descriptionLabel.text = NSLocalizedString("EmptyView.Description", comment: "")
         recoveryButton.setTitle(NSLocalizedString("EmptyView.RecoveryButtonTitle", comment: ""), forState: .Normal)
     }
+    
+    @IBAction func didTapRecoveryButton(sender: AnyObject) {
+        if let containerViewController = parentViewController as? ResultContainerViewControllerType {
+            containerViewController.transitionToSuccessContent()
+        }
+    }
 }
