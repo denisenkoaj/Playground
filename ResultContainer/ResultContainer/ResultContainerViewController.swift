@@ -9,8 +9,8 @@
 import UIKit
 
 class ResultContainerViewController: UIViewController {
-    private var successViewController: UIViewController? = UIStoryboard(name: "PokemonTableView", bundle: nil).instantiateInitialViewController()
-    private var failureViewController: UIViewController?
+    private var successViewController = UIStoryboard(name: "PokemonTableView", bundle: nil).instantiateInitialViewController()
+    private var failureViewController = UIStoryboard(name: "EmptyView", bundle: nil).instantiateInitialViewController()
     
     var activeViewController: UIViewController? {
         didSet {
@@ -22,7 +22,8 @@ class ResultContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        activeViewController = successViewController
+//        activeViewController = successViewController
+        activeViewController = failureViewController
     }
     
     private func removeInactiveViewController(inactiveViewController: UIViewController?) {

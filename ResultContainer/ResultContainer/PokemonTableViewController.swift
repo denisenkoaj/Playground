@@ -24,7 +24,7 @@ class PokemonTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Pokedex"
+        title = NSLocalizedString("PokemonTableView.Title", comment: "")
     }
 }
 

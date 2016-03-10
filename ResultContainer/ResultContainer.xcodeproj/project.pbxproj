@@ -15,6 +15,9 @@
 		3DAAF9C81C91566D000DD1FF /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAF9C71C91566D000DD1FF /* Pokemon.swift */; };
 		3DAAF9CA1C9157FE000DD1FF /* ResultContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAF9C91C9157FE000DD1FF /* ResultContainerViewController.swift */; };
 		3DAAF9CD1C91585E000DD1FF /* ResultContainerView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAF9CB1C91585E000DD1FF /* ResultContainerView.storyboard */; };
+		3DAAF9CF1C915CD7000DD1FF /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAAF9CE1C915CD7000DD1FF /* EmptyViewController.swift */; };
+		3DAAF9D21C915CF0000DD1FF /* EmptyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAF9D01C915CF0000DD1FF /* EmptyView.storyboard */; };
+		3DAAF9D51C916071000DD1FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3DAAF9D31C916071000DD1FF /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		3DAAF9C71C91566D000DD1FF /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		3DAAF9C91C9157FE000DD1FF /* ResultContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultContainerViewController.swift; sourceTree = "<group>"; };
 		3DAAF9CC1C91585E000DD1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ResultContainerView.storyboard; sourceTree = "<group>"; };
+		3DAAF9CE1C915CD7000DD1FF /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		3DAAF9D11C915CF0000DD1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EmptyView.storyboard; sourceTree = "<group>"; };
+		3DAAF9D41C916071000DD1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +68,16 @@
 			children = (
 				3DAAF9BF1C91559A000DD1FF /* Info.plist */,
 				3DAAF9B31C91559A000DD1FF /* AppDelegate.swift */,
+				3DAAF9CE1C915CD7000DD1FF /* EmptyViewController.swift */,
 				3DAAF9C71C91566D000DD1FF /* Pokemon.swift */,
 				3DAAF9C51C91565F000DD1FF /* PokemonTableViewController.swift */,
 				3DAAF9C91C9157FE000DD1FF /* ResultContainerViewController.swift */,
 				3DAAF9BA1C91559A000DD1FF /* Assets.xcassets */,
+				3DAAF9D01C915CF0000DD1FF /* EmptyView.storyboard */,
 				3DAAF9BC1C91559A000DD1FF /* LaunchScreen.storyboard */,
 				3DAAF9B71C91559A000DD1FF /* PokemonTableView.storyboard */,
 				3DAAF9CB1C91585E000DD1FF /* ResultContainerView.storyboard */,
+				3DAAF9D31C916071000DD1FF /* Localizable.strings */,
 			);
 			path = ResultContainer;
 			sourceTree = "<group>";
@@ -132,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAAF9BE1C91559A000DD1FF /* LaunchScreen.storyboard in Resources */,
+				3DAAF9D51C916071000DD1FF /* Localizable.strings in Resources */,
 				3DAAF9BB1C91559A000DD1FF /* Assets.xcassets in Resources */,
 				3DAAF9CD1C91585E000DD1FF /* ResultContainerView.storyboard in Resources */,
+				3DAAF9D21C915CF0000DD1FF /* EmptyView.storyboard in Resources */,
 				3DAAF9B91C91559A000DD1FF /* PokemonTableView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +158,7 @@
 			files = (
 				3DAAF9C61C91565F000DD1FF /* PokemonTableViewController.swift in Sources */,
 				3DAAF9B41C91559A000DD1FF /* AppDelegate.swift in Sources */,
+				3DAAF9CF1C915CD7000DD1FF /* EmptyViewController.swift in Sources */,
 				3DAAF9C81C91566D000DD1FF /* Pokemon.swift in Sources */,
 				3DAAF9CA1C9157FE000DD1FF /* ResultContainerViewController.swift in Sources */,
 			);
@@ -177,6 +189,22 @@
 				3DAAF9CC1C91585E000DD1FF /* Base */,
 			);
 			name = ResultContainerView.storyboard;
+			sourceTree = "<group>";
+		};
+		3DAAF9D01C915CF0000DD1FF /* EmptyView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAAF9D11C915CF0000DD1FF /* Base */,
+			);
+			name = EmptyView.storyboard;
+			sourceTree = "<group>";
+		};
+		3DAAF9D31C916071000DD1FF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAAF9D41C916071000DD1FF /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
