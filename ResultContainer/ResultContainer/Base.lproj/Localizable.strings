@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ResultContainer
+
+  Created by Naoto Kaneko on 3/10/16.
+  Copyright © 2016 Naoto Kaneko. All rights reserved.
+*/
+
+"PokemonTableView.Title" = "Pokedex";
+
+"EmptyView.Title" = "Empty Data";
+"EmptyView.Description" = "You don't have any data.\nPlease tap the button.";
+"EmptyView.RecoveryButtonTitle" = "Refresh";
