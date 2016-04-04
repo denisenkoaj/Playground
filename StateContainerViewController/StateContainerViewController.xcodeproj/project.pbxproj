@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3DCFB1EA1CB28203005A646E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFB1E91CB28203005A646E /* AppDelegate.swift */; };
-		3DCFB1EC1CB28203005A646E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFB1EB1CB28203005A646E /* ViewController.swift */; };
 		3DCFB1EF1CB28203005A646E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCFB1ED1CB28203005A646E /* Main.storyboard */; };
 		3DCFB1F11CB28203005A646E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCFB1F01CB28203005A646E /* Assets.xcassets */; };
 		3DCFB1F41CB28203005A646E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCFB1F21CB28203005A646E /* LaunchScreen.storyboard */; };
+		3DCFB1FC1CB282A8005A646E /* PokemonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFB1FB1CB282A8005A646E /* PokemonTableViewController.swift */; };
+		3DCFB1FE1CB28483005A646E /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFB1FD1CB28483005A646E /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DCFB1E61CB28203005A646E /* StateContainerViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateContainerViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCFB1E91CB28203005A646E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DCFB1EB1CB28203005A646E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DCFB1EE1CB28203005A646E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DCFB1F01CB28203005A646E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DCFB1F31CB28203005A646E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DCFB1F51CB28203005A646E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCFB1FB1CB282A8005A646E /* PokemonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonTableViewController.swift; sourceTree = "<group>"; };
+		3DCFB1FD1CB28483005A646E /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		3DCFB1E81CB28203005A646E /* StateContainerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3DCFB1F51CB28203005A646E /* Info.plist */,
 				3DCFB1E91CB28203005A646E /* AppDelegate.swift */,
-				3DCFB1EB1CB28203005A646E /* ViewController.swift */,
-				3DCFB1ED1CB28203005A646E /* Main.storyboard */,
+				3DCFB1FD1CB28483005A646E /* Pokemon.swift */,
+				3DCFB1FB1CB282A8005A646E /* PokemonTableViewController.swift */,
 				3DCFB1F01CB28203005A646E /* Assets.xcassets */,
 				3DCFB1F21CB28203005A646E /* LaunchScreen.storyboard */,
-				3DCFB1F51CB28203005A646E /* Info.plist */,
+				3DCFB1ED1CB28203005A646E /* Main.storyboard */,
 			);
 			path = StateContainerViewController;
 			sourceTree = "<group>";
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DCFB1EC1CB28203005A646E /* ViewController.swift in Sources */,
+				3DCFB1FC1CB282A8005A646E /* PokemonTableViewController.swift in Sources */,
 				3DCFB1EA1CB28203005A646E /* AppDelegate.swift in Sources */,
+				3DCFB1FE1CB28483005A646E /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
