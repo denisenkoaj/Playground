@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Muf-oV-64d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6AX-IH-maq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Gallery-->
         <scene sceneID="YcH-Us-vVY">
             <objects>
                 <collectionViewController id="Muf-oV-64d" customClass="CollectionViewController" customModule="Gallery" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,17 +24,28 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="uQa-3F-ACS">
-                                <rect key="frame" x="0.0" y="50" width="150" height="150"/>
+                                <rect key="frame" x="0.0" y="114" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2wp-43-bkg">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2wp-43-bkg" secondAttribute="bottom" id="1xp-kE-daU"/>
+                                    <constraint firstItem="2wp-43-bkg" firstAttribute="leading" secondItem="uQa-3F-ACS" secondAttribute="leading" id="3Yz-tu-aM0"/>
+                                    <constraint firstAttribute="trailing" secondItem="2wp-43-bkg" secondAttribute="trailing" id="Dhw-fT-VLP"/>
+                                    <constraint firstItem="2wp-43-bkg" firstAttribute="top" secondItem="uQa-3F-ACS" secondAttribute="top" id="IjJ-tm-Vjh"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionHeader" id="cUz-3x-b2u">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                            <rect key="frame" x="0.0" y="64" width="600" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU8-ZD-s1L" userLabel="Header Label">
@@ -57,10 +68,27 @@
                             <outlet property="delegate" destination="Muf-oV-64d" id="0Px-aA-gfA"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Gallery" id="Whk-9H-dSm"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o88-HZ-SdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="369"/>
+            <point key="canvasLocation" x="320" y="369"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Be-rv-2cH">
+            <objects>
+                <navigationController id="6AX-IH-maq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gac-le-Clu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Muf-oV-64d" kind="relationship" relationship="rootViewController" id="ua5-Qn-dB9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOU-wi-BpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="369"/>
         </scene>
     </scenes>
 </document>
