@@ -26,7 +26,7 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -38,5 +38,37 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         let view = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "CollectionHeader", forIndexPath: indexPath)
         return view
+    }
+}
+
+extension CollectionViewController: UICollectionViewDelegateFlowLayout {
+    private var numberOfColumns: Int {
+        return 2
+    }
+
+    private var minimumLineSpacing: CGFloat {
+        return 1
+    }
+
+    private var minimumInteritemSpacing: CGFloat {
+        return 1
+    }
+
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let length = (collectionView.frame.width - minimumInteritemSpacing * CGFloat(numberOfColumns - 1)) / CGFloat(numberOfColumns)
+
+        if indexPath.row == 0 {
+            return CGSize(width: collectionView.frame.width, height: length)
+        } else {
+            return CGSize(width: length, height: length)
+        }
+    }
+
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return minimumLineSpacing
+    }
+
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return minimumInteritemSpacing
     }
 }
