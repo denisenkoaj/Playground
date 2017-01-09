@@ -38,8 +38,8 @@
 		3DD94A661E20B5D5007ECD6A = {
 			isa = PBXGroup;
 			children = (
-				3DD94A711E20B5D5007ECD6A /* Snackbar */,
 				3DD94A701E20B5D5007ECD6A /* Products */,
+				3DD94A711E20B5D5007ECD6A /* Snackbar */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +300,7 @@
 				3DD94A831E20B5D5007ECD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
